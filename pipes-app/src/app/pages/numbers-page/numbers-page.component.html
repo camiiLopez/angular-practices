@@ -1,0 +1,27 @@
+<section>
+  <div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+    <div class="stat">
+      <div class="stat-title">Number:'1.2-2'</div>
+      <div class="stat-value">{{ totalSells() | number: '1.2-2'}}</div>
+      <div class="stat-desc">{{totalSells()}}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Number:'1.2-2'</div>
+      <div class="stat-value">{{ totalSells() + 11223344 | number: '1.1-2'}}</div>
+      <div class="stat-desc">{{totalSells() + ' + 11223344'}}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Currency</div>
+      <div class="stat-value">{{totalSells() | currency:'ARS' : 'symbol-narrow': '1.4-4'}}</div>
+      <div class="stat-desc">{{totalSells()}}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Porcentaje</div>
+      <div class="stat-value">{{percent() | percent: '1.2-2'}}</div>
+      <div class="stat-desc">{{percent()}}</div>
+    </div>
+  </div>
+</section>
